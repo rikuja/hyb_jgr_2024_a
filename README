@@ -1,0 +1,20 @@
+This is the following version from repository on
+https://github.com/fmihpc:
+
+hyb: f08242b1e329aa6435212c235a8eb803ab0cdeda
+
+Compile the HYB hybrid code:
+
+cd hyb/sim/src/
+make
+
+Perform runs:
+
+mkdir mars_cusp_hyb_run_jgr_2024
+cd mars_cusp_hyb_run_jgr_2024
+cp -p ../../../../run_cfg_files/mars_cusp.cfg ./
+./hyb -f mars_cusp.cfg
+
+You can use tools in the hyb/tools/ folder to examine the output *.hc
+files or the VisIt (https://visit-dav.github.io/visit-website/)
+software to open the *.vtk files.
